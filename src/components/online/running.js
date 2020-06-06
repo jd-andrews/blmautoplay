@@ -21,9 +21,7 @@ export default function Running(props) {
   const firstRun = () => {
     setCount(count + 1);
     console.log(count);
-    window.open(
-      "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj47O7nwejpAhVLK80KHZPyAnEQPAgH"
-    );
+    window.open("https://youtu.be/bCgLa25fDHM");
   };
 
   const runningScript = () => {

@@ -5,12 +5,10 @@ export default function Counter() {
   const [count, setCount] = useState(1);
 
   useInterval(() => {
-    window.open(
-      "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj47O7nwejpAhVLK80KHZPyAnEQPAgH"
-    );
+    window.open("https://youtu.be/bCgLa25fDHM");
 
     setCount(count + 1);
-  }, 10000);
+  }, 12000000);
 
   return <h1>played {count} time(s)</h1>;
 }
