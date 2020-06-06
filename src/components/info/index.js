@@ -6,10 +6,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   links: {
-    fontSize: "1.4em",
+    fontSize: "1.2em",
   },
   desc: {
     paddingLeft: 10,
+  },
+  head: {
+    fontWeight: "bold",
+    fontSize: "1.4em",
   },
 }));
 
@@ -17,9 +21,11 @@ export default function Info(props) {
   const classes = useStyles();
 
   return (
-    <Grid container>
+    <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Typography variant="h3">Info and Resources</Typography>
+        <Typography className={classes.head}>
+          helpful links to sites that are way more important
+        </Typography>
       </Grid>
       <Grid item xs={8}>
         <Link
@@ -29,10 +35,15 @@ export default function Info(props) {
         >
           blacklivesmatter.card.co
         </Link>
-        <Typography className={classes.desc}>
-          By far the most helpful and a general catchall for everything, most
-          questions can be answered here.
-        </Typography>
+      </Grid>
+      <Grid item xs={8}>
+        <Link
+          className={classes.links}
+          href="https://8cantwait.org/"
+          alt="8 cant wait"
+        >
+          8 Can't Wait
+        </Link>
       </Grid>
     </Grid>
   );

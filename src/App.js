@@ -9,11 +9,13 @@ import { Typography } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Grid from "@material-ui/core/Grid";
+import HTH from "./assets/HTH.png";
 
 const useStyles = makeStyles((theme) => ({
   list: {
     textDecoration: "none",
     listStyleType: "none",
+    color: "#000000",
   },
   main: {
     padding: 40,
@@ -22,6 +24,11 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize: "1.3em",
   },
+  image: {
+    height: 150,
+    paddingTop: 20,
+    marginBottom: -20,
+  },
 }));
 
 export default function App() {
@@ -29,20 +36,25 @@ export default function App() {
 
   return (
     <Router>
+      <Grid container justify="center" alignContent="center">
+        <a href="https://www.hope-this-helps.info/" alt="hth">
+          <img className={classes.image} src={HTH} alt="Hope This Helps" />
+        </a>
+      </Grid>
       <Paper className={classes.main} elevation={10}>
         <Grid container justify="center">
           <ButtonGroup>
-            <Button>
+            <Button variant="contained">
               <Link className={classes.list} to="/">
                 About
               </Link>
             </Button>
-            <Button>
+            <Button variant="contained">
               <Link className={classes.list} to="/python">
                 Python Version
               </Link>
             </Button>
-            <Button>
+            <Button variant="contained">
               <Link className={classes.list} to="/online">
                 Online Version
               </Link>
@@ -90,20 +102,19 @@ export default function App() {
         </Grid>
         <Grid item xs={12}>
           <Typography className={classes.text}>
-            The purpose of this app and website are to help streamline the
-            process. After my first watch I decided to keep it playing in
-            another tab to continue to acrue that ad revenue. After a couple
-            times of forgetting it was playing in the background and not
-            remembering how long it had been over for, I decide to make this
-            app.
+            The purpose of this app and website are to help automate it. After
+            my first watch I decided to keep it playing in another tab to
+            (hopefully) continue to get served ads. After a couple times of
+            forgetting it was playing in the background and not remembering how
+            long it had been over for, I decide to make this app.
           </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography className={classes.text}>
-            It's fairly simple, and there are two versions: in browser and
-            python. The in browser option will open a new tab (popup) with the
-            video every 2 hours. The Python version runs a script locally that
-            does the same thing.
+            It's fairly simple, and there are two versions: one in browser and
+            one Python file. The in browser option will open a new tab (popup)
+            with the video every two hours. The Python version runs a script
+            locally that does the same thing.
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -111,7 +122,14 @@ export default function App() {
             ** note - I'm definitely not the best programmer in any of these
             languages, this was just something I wanted to put together and ship
             fast so that other people could use it if they wanted. If you have
-            comments, concerns, questions, tips, etc. please email - **
+            comments, concerns, questions, tips, etc. please email -{" "}
+            <Link
+              href="hopethishelpsinfo@gmail.com"
+              alt="hopethishelpsinfo@gmail.com"
+            >
+              hopethishelpsinfo@gmail.com
+            </Link>
+            **
           </Typography>
         </Grid>
       </Grid>
