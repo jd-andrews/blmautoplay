@@ -39,6 +39,15 @@ export default function Info(props) {
       <Grid item xs={8}>
         <Link
           className={classes.links}
+          href="https://docs.google.com/document/u/0/d/1S5uckFHCA_XZkxG0Zg5U4GQGbY_RklZARwu43fqJH0E/mobilebasic"
+          alt="anti-racism resource list"
+        >
+          Anti-Racism Resource List
+        </Link>
+      </Grid>
+      <Grid item xs={8}>
+        <Link
+          className={classes.links}
           href="https://8cantwait.org/"
           alt="8 cant wait"
         >
