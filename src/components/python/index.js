@@ -18,11 +18,17 @@ export default function Python(props) {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" alignItems="center" direction="column">
-      <Grid item xs={12}>
+    <Grid
+      container
+      justify="center"
+      alignItems="center"
+      direction="column"
+      xs={12}
+    >
+      <Grid>
         <Typography className={classes.tite}> Python</Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid>
         <PDownload />
         <File />
       </Grid>

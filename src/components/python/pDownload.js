@@ -3,7 +3,11 @@ import { Grid, Link, Typography } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  link: {
+    textAlign: "center",
+  },
+}));
 
 export default function PDownload(props) {
   const classes = useStyles();
@@ -16,7 +20,7 @@ export default function PDownload(props) {
           the Python Launcher, link below.
         </Typography>
       </Grid>
-      <Grid item xs>
+      <Grid item xs className={classes.link}>
         <Link
           href="https://www.python.org/downloads/"
           alt="python download website"

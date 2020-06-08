@@ -22,12 +22,15 @@ const useStyles = makeStyles((theme) => ({
     margin: 40,
   },
   text: {
-    fontSize: "1.3em",
+    fontSize: "1.05em",
   },
   image: {
     height: 150,
     paddingTop: 20,
     marginBottom: -20,
+  },
+  psst: {
+    fontSize: ".7em",
   },
 }));
 
@@ -118,7 +121,7 @@ export default function App() {
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography>
+          <Typography className={classes.psst}>
             ** note - I'm definitely not the best programmer in any of these
             languages, this was just something I wanted to put together and ship
             fast so that other people could use it if they wanted. If you have
