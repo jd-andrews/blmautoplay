@@ -45,15 +45,6 @@ export default function Info(props) {
           Anti-Racism Resource List
         </Link>
       </Grid>
-      <Grid item xs={8}>
-        <Link
-          className={classes.links}
-          href="https://8cantwait.org/"
-          alt="8 cant wait"
-        >
-          8 Can't Wait
-        </Link>
-      </Grid>
     </Grid>
   );
 }
