@@ -19,10 +19,18 @@ const useStyles = makeStyles((theme) => ({
   },
   main: {
     padding: 40,
-    margin: 40,
+    marginTop: 20,
+    marginBottom: 20,
+    marginLeft: 40,
+    marginRight: 40,
+    width: "fit-content",
   },
   text: {
     fontSize: "1.05em",
+  },
+  text2: {
+    fontSize: "1.2em",
+    fontWeight: "bold",
   },
   image: {
     height: 150,
@@ -40,47 +48,49 @@ export default function App() {
   return (
     <Router>
       <Grid container justify="center" alignContent="center">
-        <a href="https://www.hope-this-helps.info/" alt="hth">
-          <img className={classes.image} src={HTH} alt="Hope This Helps" />
-        </a>
-      </Grid>
-      <Paper className={classes.main} elevation={10}>
-        <Grid container justify="center">
-          <ButtonGroup>
-            <Button variant="contained">
-              <Link className={classes.list} to="/">
-                About
-              </Link>
-            </Button>
-            <Button variant="contained">
-              <Link className={classes.list} to="/python">
-                Python Version
-              </Link>
-            </Button>
-            <Button variant="contained">
-              <Link className={classes.list} to="/online">
-                Online Version
-              </Link>
-            </Button>
-          </ButtonGroup>
+        <Grid container justify="center" alignContent="center">
+          <a href="https://www.hope-this-helps.info/" alt="hth">
+            <img className={classes.image} src={HTH} alt="Hope This Helps" />
+          </a>
         </Grid>
-      </Paper>
-      <Paper className={classes.main} elevation={10}>
-        <Switch>
-          <Route path="/python">
-            <Python />
-          </Route>
-          <Route path="/online">
-            <Online />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Paper>
-      <Paper className={classes.main} elevation={10}>
-        <Info />
-      </Paper>
+        <Paper className={classes.main} elevation={10}>
+          <Grid container justify="center">
+            <ButtonGroup>
+              <Button variant="contained">
+                <Link className={classes.list} to="/">
+                  About
+                </Link>
+              </Button>
+              <Button variant="contained">
+                <Link className={classes.list} to="/python">
+                  Python Version
+                </Link>
+              </Button>
+              <Button variant="contained">
+                <Link className={classes.list} to="/online">
+                  Online Version
+                </Link>
+              </Button>
+            </ButtonGroup>
+          </Grid>
+        </Paper>
+        <Paper className={classes.main} elevation={10}>
+          <Switch>
+            <Route path="/python">
+              <Python />
+            </Route>
+            <Route path="/online">
+              <Online />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Paper>
+        <Paper className={classes.main} elevation={10}>
+          <Info />
+        </Paper>
+      </Grid>
     </Router>
   );
   function Home() {
@@ -94,6 +104,13 @@ export default function App() {
         alignItems="center"
         direction="column"
       >
+        <Grid item xs={12}>
+          <Typography className={classes.text2}>
+            ** UPDATE - the video is now down and won't be coming back. Please
+            consider following the links below to find more information on how
+            to help. **
+          </Typography>
+        </Grid>
         <Grid item xs={12}>
           <Typography className={classes.text}>
             Zoe Amira put together an incredible video that offers a way to
