@@ -14,14 +14,15 @@ export default function Counter() {
 }
 
 function useInterval(callback, delay) {
+  //useRef to setup a mutable object to track the amount of time played
   const savedCallback = useRef();
 
-  // Remember the latest function.
+  // useEffect to track callback/times played
   useEffect(() => {
     savedCallback.current = callback;
   }, [callback]);
 
-  // Set up the interval.
+  // useEffect to set current interval
   useEffect(() => {
     function tick() {
       savedCallback.current();
