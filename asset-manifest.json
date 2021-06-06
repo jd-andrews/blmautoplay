@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/blmautoplay/static/css/main.bf3882c2.chunk.css",
+    "main.js": "/blmautoplay/static/js/main.8341262c.chunk.js",
+    "main.js.map": "/blmautoplay/static/js/main.8341262c.chunk.js.map",
+    "runtime-main.js": "/blmautoplay/static/js/runtime-main.d556a770.js",
+    "runtime-main.js.map": "/blmautoplay/static/js/runtime-main.d556a770.js.map",
+    "static/js/2.78a9b91d.chunk.js": "/blmautoplay/static/js/2.78a9b91d.chunk.js",
+    "static/js/2.78a9b91d.chunk.js.map": "/blmautoplay/static/js/2.78a9b91d.chunk.js.map",
+    "index.html": "/blmautoplay/index.html",
+    "precache-manifest.d6acf3a83cb72409da1cb9b567443c57.js": "/blmautoplay/precache-manifest.d6acf3a83cb72409da1cb9b567443c57.js",
+    "service-worker.js": "/blmautoplay/service-worker.js",
+    "static/css/main.bf3882c2.chunk.css.map": "/blmautoplay/static/css/main.bf3882c2.chunk.css.map",
+    "static/js/2.78a9b91d.chunk.js.LICENSE.txt": "/blmautoplay/static/js/2.78a9b91d.chunk.js.LICENSE.txt",
+    "static/media/HTH.png": "/blmautoplay/static/media/HTH.30f928da.png",
+    "static/media/blmtest.py": "/blmautoplay/static/media/blmtest.4ccd0c8a.py"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d556a770.js",
+    "static/js/2.78a9b91d.chunk.js",
+    "static/css/main.bf3882c2.chunk.css",
+    "static/js/main.8341262c.chunk.js"
+  ]
+}
